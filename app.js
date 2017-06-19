@@ -6,6 +6,7 @@ function initMap(){
 		zoomControl: false,
 		streetViewControl: false
 	});
+	
 	function buscar(){
 		if(navigator.geolocation) {
 			navigator.geolocation.getCurrentPosition(funcionExito, funcionError);
@@ -30,3 +31,8 @@ function initMap(){
 		alert("Tenemos un problema con encontrar tu ubicación");
 	}
 }
+
+
+
+
+

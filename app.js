@@ -1,4 +1,10 @@
+
+
 function initMap(){
+
+	var input = document.getElementById('searchTextField');
+    var autocomplete = new google.maps.places.Autocomplete(input);
+
 	var map = new google.maps.Map(document.getElementById("map"),{
 		zoom: 5,
 		center: {lat: -9.1191427, lng: -77.0349046},
@@ -6,7 +12,7 @@ function initMap(){
 		zoomControl: false,
 		streetViewControl: false
 	});
-	
+
 	function buscar(){
 		if(navigator.geolocation) {
 			navigator.geolocation.getCurrentPosition(funcionExito, funcionError);
@@ -31,8 +37,4 @@ function initMap(){
 		alert("Tenemos un problema con encontrar tu ubicación");
 	}
 }
-
-
-
-
 

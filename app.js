@@ -20,7 +20,8 @@ function initMap(){
 		var miUbicacion = new google.maps.Marker({
 			position: {lat:latitud, lng:longitud},
 			animation: google.maps.Animation.DROP,
-			map: map
+			map: map,
+			icon: 'http://www.gps-routes.co.uk/routes/home.nsf/cycleicon.png'
 		});
 		map.setZoom(17);
 		map.setCenter({lat:latitud, lng:longitud});

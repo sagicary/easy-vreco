@@ -7,9 +7,6 @@
 	<title>Easy-Bike</title>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDFX-nLj5Cw8iuR8oooWTvrNqouB4UanQ&libraries=places&callback=initMap"
-        async defer></script>
-        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script>
 	<!--CSS-->
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
@@ -22,11 +19,11 @@
 				</div>
 				<div class="col-md-3 col-sm-3">
 					<p>Origen</p>
-					<input type="text" id="searchTextField" placeholder="Introduce una ubicación">
+					<input type="text" id="desde" placeholder="Introduce una ubicación">
 				</div>
 				<div class="col-md-3 col-sm-3">
 					<p>Destino</p>
-					<input type="text" placeholder="Introduce una ubicación">
+					<input type="text" id="hasta" placeholder="Introduce una ubicación">
 				</div>
 				<div class="col-md-3 col-sm-3">
 					<button id="ruta">Ruta</button>
@@ -42,14 +39,12 @@
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<!--MAPA-->
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	
 	<!-- Tu Archivo main.js -->
-	<script src="https://use.fontawesome.com/1625bb79ec.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDFX-nLj5Cw8iuR8oooWTvrNqouB4UanQ&libraries=places&callback=initMap"></script>
 	<script type="text/javascript" src="app.js"></script>
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDFX-nLj5Cw8iuR8oooWTvrNqouB4UanQ&callback=initMap"></script>
 	
 
 </body>
